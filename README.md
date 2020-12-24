@@ -1,5 +1,5 @@
 
-# Lives de código toda terças as 21:30h (GMT-3) em https://www.twitch.tv/codigomix
+# Lives de código todas as terças as 21:30h (GMT-3) em https://www.twitch.tv/codigomix
 
 
 # training
