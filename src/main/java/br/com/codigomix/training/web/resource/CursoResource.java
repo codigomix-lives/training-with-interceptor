@@ -1,4 +1,4 @@
-package br.com.codigomix.training.web;
+package br.com.codigomix.training.web.resource;
 
 import br.com.codigomix.training.data.CursoRepository;
 import br.com.codigomix.training.model.Curso;
@@ -24,19 +24,9 @@ public class CursoResource {
 
     @GetMapping("/cursos")
     public ResponseEntity<List<Curso>> getCursos(){
-        ConsumptionProbe probe = rateLimitService.getBucket().tryConsumeAndReturnRemaining(1);
 
-        if (probe.isConsumed()){
             var cursos = cursoRepository.findAll();
-            return ResponseEntity.ok()
-                            .header("X-Rate-Limit-Remaining", String.valueOf(probe.getRemainingTokens()))
-                            .body(cursos);
-        } else {
-            return ResponseEntity.status(HttpStatus.TOO_MANY_REQUESTS)
-                            .header("X-Rate-Limit-Retry-After-Seconds",
-                                    String.valueOf(TimeUnit.NANOSECONDS.toSeconds(probe.getNanosToWaitForRefill())))
-                            .build();
-        }
+            return ResponseEntity.ok().body(cursos);
 
     }
 

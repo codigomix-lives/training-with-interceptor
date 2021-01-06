@@ -2,17 +2,18 @@
 # Lives de código todas as terças as 21:30h (GMT-3) em https://www.twitch.tv/codigomix
 
 
-# training-with-rate-limit
-Live#3 - livecode - Adicionando rate limit na api em Spring Boot 
+# training-with-interceptor
+Live#4 - livecode - Adicionando interceptors na api em Spring Boot 
 
+Nesta live, adicionamos deixamos o rate limit de uma forma global através de
+interceptors do Spring. Além disso, criamos um novo interceptor para logs de endpoints.
+Para finalizar, mudamos a base em memória para uma base externa usando os properties do
+Spring, e fechamos com um carregamento automático de dados iniciais.
 
-Nesta live, adicionamos uma biblioteca para limitar o acesso a API de treinamento. 
-Utilizamos o bucket4j que utiliza o algoritmo Token Bucket, que é explicado
-durante a live. Ficou bom, mas da para melhorar na Live#4
-
-Veja o vídeo aqui: https://youtu.be/ZwXtr7YwiTM
+Veja o vídeo aqui: 
 
 *Se quiser ver a criação inicial da API, vá para a live#2 (https://github.com/codigomix-lives/training)*
+*Se quiser ver a quando colocamos o rate limit, vá para a live#3 (https://github.com/codigomix-lives/training-with-rate-limit)*
 
 Abaixo apenas o conteúdo do HELP.md gerado quando criamos no https://start.spring.io/
 
