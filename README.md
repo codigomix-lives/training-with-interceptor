@@ -10,7 +10,7 @@ interceptors do Spring. Além disso, criamos um novo interceptor para logs de en
 Para finalizar, mudamos a base em memória para uma base externa usando os properties do
 Spring, e fechamos com um carregamento automático de dados iniciais.
 
-Veja o vídeo aqui: 
+Veja o vídeo aqui: https://youtu.be/KX42GZYZh7M
 
 *Se quiser ver a criação inicial da API, vá para a live#2 (https://github.com/codigomix-lives/training)*
 *Se quiser ver a quando colocamos o rate limit, vá para a live#3 (https://github.com/codigomix-lives/training-with-rate-limit)*
