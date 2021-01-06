@@ -2,14 +2,17 @@
 # Lives de código todas as terças as 21:30h (GMT-3) em https://www.twitch.tv/codigomix
 
 
-# training
-Live#2 - livecode - Api em Spring Boot 
+# training-with-rate-limit
+Live#3 - livecode - Adicionando rate limit na api em Spring Boot 
 
-Nesta live, criamos uma api básica de treinamento. Usando o https://start.spring.io/, criamos a base do projeto com as bibliotecas spring que queriamos no momento 
-e que estão listadas abaixo. O https://start.spring.io/ gera um conteúdo com todas elas e o link da documentação no arquivo HELP.md, que copiei neste README, já que 
-esse arquivo é ignorado no `.gitignore.`
 
-Veja o vídeo aqui: https://youtu.be/qTog7wHukt0
+Nesta live, adicionamos uma biblioteca para limitar o acesso a API de treinamento. 
+Utilizamos o bucket4j que utiliza o algoritmo Token Bucket, que é explicado
+durante a live. Ficou bom, mas da para melhorar na Live#4
+
+Veja o vídeo aqui: https://youtu.be/ZwXtr7YwiTM
+
+*Se quiser ver a criação inicial da API, vá para a live#2 (https://github.com/codigomix-lives/training)*
 
 Abaixo apenas o conteúdo do HELP.md gerado quando criamos no https://start.spring.io/
 
